@@ -1,43 +1,42 @@
-
 # pars
 
-Parser pol'zovatel'skih imen iz platformy Fragment.
+Парсер пользовательских имён из платформы Fragment.
 
-Sobiraet i analiziruet dannye ob uchastnikah s vozmozhnost'yu izvlecheniya stoimosti.
+Собирает и анализирует данные об участниках/пользователях с возможность извлечения стоимости.
 
-## Stek
+## Стек
 
 Python · aiogram 3 · SQLite
 
-## Struktura
+## Структура
 
-`
+```
 pars/
-├── bot.py          — osnovnaya logika parsinga
-├── storage.py      — rabota s SQLite
-├── config.py       — zagruzka peremennyh okruzheniya
-├── messages.db     — baza dannyh
-├── .env.example   — primer konfiga
+├── bot.py          — основная логика парсинга
+├── storage.py      — работа с SQLite
+├── config.py       — загрузка переменных окружения
+├── messages.db     — база данных
+├── .env.example   — пример конфига
 └── requirements.txt
-`
+```
 
-## Ustanovka
+## Установка
 
-\\\powershell
+```powershell
 git clone https://github.com/HE-MAESTRO/pars.git
 cd pars
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-\\\
+```
 
-Kopiruem .env.example → .env, zapalnyaem tokeny.
+Копируем `.env.example` → `.env`, заполняем токены.
 
-## Zapusk
+## Запуск
 
-\\\powershell
+```powershell
 python bot.py
-\\\
+```
 
 ---
 
